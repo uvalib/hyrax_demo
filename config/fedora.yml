@@ -11,5 +11,5 @@ test:
 production:
   user: fedoraAdmin
   password: fedoraAdmin
-  http://docker1.lib.virginia.edu:<%= ENV['FCREPO_DEVELOPMENT_PORT'] || 8055 %>/rest
+  url: http://docker1.lib.virginia.edu:<%= ENV['FCREPO_DEVELOPMENT_PORT'] || 8055 %>/rest
   base_path: /prod
