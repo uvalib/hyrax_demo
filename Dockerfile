@@ -7,7 +7,7 @@ RUN apk add --update --no-cache bash which tar file git openjdk8-jre imagemagick
 ENV TZ=UTC
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-ENV RAILS_ENV=production
+#ENV RAILS_ENV=production
 RUN gem install bundler --no-ri --no-rdoc
 
 # Copy the Gemfile and Gemfile.lock into the image.
