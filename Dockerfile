@@ -1,6 +1,6 @@
 FROM ruby:2.3.3-alpine
 
-RUN apk add --update --no-cache bash which tar file git openjdk8-jre imagemagick sqlite-dev \
+RUN apk add --update --no-cache bash which tar file git openjdk8-jre imagemagick mariadb-dev \
   build-base libxml2-dev libxslt-dev tzdata \
   && apk add nodejs
 
